@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -49,7 +49,7 @@ const ITEMS_PER_PAGE = 9;
 //   },
 // }));
 
-export default function SearchResults() {
+ function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get("query") || "";
   const [newQuery, setNewQuery] = useState(query);
@@ -213,4 +213,12 @@ export default function SearchResults() {
       </div>
     </div>
   );
+}
+
+export default function Page(){
+  return (
+    <Suspense>
+      <SearchResults />
+    </Suspense>
+  )
 }
