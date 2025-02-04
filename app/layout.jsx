@@ -12,25 +12,28 @@ const geistMono = Lora({
 });
 
 export const metadata = {
-  title: "Snazzyblog - Fashion & Lifestyle",
+  title: "Jer Blog - Sviluppo e Programmazione",
   description:
-    "Discover the latest trends in fashion, lifestyle, and travel with Snazzyblog. Get inspired by our curated content and expert advice.",
-  keywords: ["fashion", "lifestyle", "travel", "blog", "trends", "style"],
+    "Scopri tutorial, guide e consigli sullo sviluppo web e la programmazione con Jer Blog. Rimani aggiornato sulle ultime tecnologie e framework.",
+  keywords: [
+    "sviluppo web", "programmazione", "JavaScript", "React", "Next.js", 
+    "Node.js", "TypeScript", "frontend", "backend", "full-stack", 
+    "coding", "web development", "software engineering", "UI/UX", "API"
+  ],
   openGraph: {
-    title: "Snazzyblog - Fashion & Lifestyle",
+    title: "Jer Blog - Sviluppo e Programmazione",
     description:
-      "Discover the latest trends in fashion, lifestyle, and travel with Snazzyblog.",
+      "Scopri tutorial, guide e consigli sullo sviluppo web e la programmazione con Jer Blog.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image-dev.jpg",
         width: 1200,
         height: 630,
-        alt: "Snazzyblog - Fashion & Lifestyle",
+        alt: "Jer Blog - Sviluppo e Programmazione",
       },
     ],
   },
 };
-
 import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";

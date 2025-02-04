@@ -12,10 +12,10 @@ export function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const navItems = [
-    { href: "/frontend", label: "Frontend" },
-    { href: "/backend", label: "Backend" },
-    { href: "/devops", label: "Dev-Ops" },
-    { href: "/ux-ui", label: "UX-UI" },
+    { href: "/category/frontend", label: "Frontend" },
+    { href: "/category/backend", label: "Backend" },
+    { href: "/category/devops", label: "Dev-Ops" },
+    { href: "/category/ux-ui", label: "UX-UI" },
     { href: "/about", label: "About" },
   ];
 
